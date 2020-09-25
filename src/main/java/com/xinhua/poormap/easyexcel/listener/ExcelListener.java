@@ -2,7 +2,7 @@ package com.xinhua.poormap.easyexcel.listener;
 
 import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
-import com.xinhua.poormap.easyexcel.dao.ExcelConsumer;
+import com.xinhua.poormap.easyexcel.service.ExcelConsumer;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;

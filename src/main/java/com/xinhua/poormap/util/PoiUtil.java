@@ -63,14 +63,6 @@ public class PoiUtil {
                                 }
                                 break;
                             default: {
-                                switch (k) {
-                                    case 2:
-                                        data.setLat(String.valueOf(cell.getNumericCellValue()));
-                                        break;
-                                    case 3:
-                                        data.setLng(String.valueOf(cell.getNumericCellValue()));
-                                        break;
-                                }
                             }
                             break;
                         }
