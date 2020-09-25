@@ -14,7 +14,7 @@ public class PoorCounty {
     private String province;
     @ExcelProperty("城市")
     private String city;
-    @ExcelProperty("维度")
+    @ExcelProperty("纬度")
     private float lat;
     @ExcelProperty("经度")
     private float lng;

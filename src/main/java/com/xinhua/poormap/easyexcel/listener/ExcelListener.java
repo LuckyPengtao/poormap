@@ -16,6 +16,14 @@ public class ExcelListener<T> extends AnalysisEventListener<T> {
     private static final int BATCH_COUNT = 1000;
     List<T> list = new ArrayList<T>();
 
+    public ExcelListener(ExcelConsumer consumer) {
+        this.consumer = consumer;
+    }
+
+    public ExcelListener() {
+
+    }
+
     @Override
     public void invoke(T t, AnalysisContext analysisContext) {
         list.add(t);

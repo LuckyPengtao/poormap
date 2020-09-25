@@ -9,6 +9,8 @@ import java.util.List;
 public class DemoConsumerImpl implements ExcelConsumer<PoorCounty> {
     @Override
     public void excute(List<PoorCounty> list) {
+        if(list == null || list.size() == 0)
+            return;
         for(PoorCounty data : list){
             String str = BaiduAPI.reverse_geocoding(data.getLat(), data.getLng());
             System.out.println(str);
